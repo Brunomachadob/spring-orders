@@ -13,6 +13,7 @@ apply plugin: 'eclipse'
 apply plugin: 'idea'
 apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
+apply plugin: "jacoco"
 
 bootJar {
     baseName = 'spring-orders'
@@ -25,6 +26,15 @@ repositories {
 
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
+
+jacocoTestReport {
+    group = "Reporting"
+    reports {
+        xml.enabled true
+        csv.enabled false
+        html.destination file("${buildDir}/reports/coverage")
+    }
+}
 
 dependencies {
     compile 'org.springframework.boot:spring-boot-starter-web'
