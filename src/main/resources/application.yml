@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: spring-hello
+  h2:
+    console:
+      enabled: true
+  jpa:
+    properties:
+      hibernate:
+        ddl-auto: validate
+server:
+  port: 8080
+---
+spring:
+  profiles: prod
+server:
+  port: ${PORT}
