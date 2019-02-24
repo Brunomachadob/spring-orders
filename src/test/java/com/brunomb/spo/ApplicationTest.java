@@ -1,16 +1,7 @@
 package com.brunomb.spo;
 
-import org.junit.Test;
-import org.junit.runner.RunWith;
+import org.springframework.context.annotation.PropertySource;
 
-import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.junit4.SpringRunner;
-
-@RunWith(SpringRunner.class)
-@SpringBootTest
+@PropertySource(value = "classpath:application.yml", factory = YamlPropertyLoaderFactory.class)
 public class ApplicationTest {
-
-    @Test
-    public void contextLoads() throws Exception {
-    }
 }

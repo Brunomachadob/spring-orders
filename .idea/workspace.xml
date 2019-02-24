@@ -2,7 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5620db66-9c5d-4476-8d9e-e1a0569be897" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lombok.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/brunomb/spo/ApplicationConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/brunomb/spo/auth/LoginRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/brunomb/spo/security/JWTAuthenticationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/brunomb/spo/security/JWTAuthorizationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/brunomb/spo/security/UserDetailsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/brunomb/spo/security/WebSecurity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/brunomb/spo/user/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/brunomb/spo/user/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/brunomb/spo/user/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/brunomb/spo/AbstractTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/brunomb/spo/ContextLoadTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/brunomb/spo/UserDetailsMock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/brunomb/spo/YamlPropertyLoaderFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/brunomb/spo/product/ProductControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/brunomb/spo/user/UserControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileContent/annotation-processors.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileContent/annotation-processors.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileContent/fileContent.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" afterDir="false" />
@@ -12,8 +29,16 @@
       <change beforePath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/brunomb/spo/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/brunomb/spo/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/brunomb/spo/customer/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/brunomb/spo/customer/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V1__init.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V1__init.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V2__seed.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V2__seed.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/brunomb/spo/ApplicationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/brunomb/spo/ApplicationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/brunomb/spo/customer/CustomerControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/brunomb/spo/customer/CustomerControllerTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -47,29 +72,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/db/migration/V2__seed.sql">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/brunomb/spo/ApplicationTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+            <state relative-caret-position="60">
+              <caret line="4" column="46" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="46" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/db/migration/V1__init.sql">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/brunomb/spo/AbstractTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="55" selection-start-line="9" selection-start-column="55" selection-end-line="9" selection-end-column="55" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/brunomb/spo/product/Product.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
-              <caret line="25" selection-start-line="25" selection-end-line="25" />
+            <state relative-caret-position="49">
+              <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -78,39 +94,52 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.gradle">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/brunomb/spo/customer/CustomerControllerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="34" column="61" selection-start-line="34" selection-start-column="61" selection-end-line="34" selection-end-column="61" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lombok.config">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="26" selection-start-column="26" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="3" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/brunomb/spo/customer/Customer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="18" column="83" selection-start-line="18" selection-start-column="83" selection-end-line="18" selection-end-column="83" />
+            <state relative-caret-position="108">
+              <caret line="107" column="19" selection-start-line="107" selection-start-column="19" selection-end-line="107" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/brunomb/spo/product/ProductControllerTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="104" column="17" selection-start-line="104" selection-start-column="17" selection-end-line="104" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/brunomb/spo/user/UserControllerTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="102" column="17" selection-start-line="102" selection-start-column="17" selection-end-line="102" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="31" lean-forward="true" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-core/5.0.8.RELEASE/eacb961f1d4b542fb4b4bcd1321d0ae9e4b93843/spring-security-core-5.0.8.RELEASE-sources.jar!/org/springframework/security/core/userdetails/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="452">
+              <caret line="83" column="11" selection-start-line="83" selection-start-column="11" selection-end-line="83" selection-end-column="11" />
+              <folding>
+                <element signature="e#5570#5571#0" expanded="true" />
+                <element signature="e#5592#5593#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -129,6 +158,9 @@
     <findStrings>
       <find>application</find>
       <find>mongo</find>
+      <find>BCryptPasswordEncoder</find>
+      <find>auth</find>
+      <find>objectMapper</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -137,22 +169,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/hello/Greeting.java" />
-        <option value="$PROJECT_DIR$/src/main/java/hello/GreetingController.java" />
-        <option value="$PROJECT_DIR$/src/test/java/hello/ApplicationTest.java" />
-        <option value="$PROJECT_DIR$/src/main/asciidoc/index.adoc" />
-        <option value="$PROJECT_DIR$/src/main/java/hello/model/Customer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/hello/controller/CustomerCriteria.java" />
-        <option value="$PROJECT_DIR$/src/main/java/hello/RestConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application-prod.properties" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/src/main/resources/application-dev.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/hello/Application.java" />
-        <option value="$PROJECT_DIR$/src/main/java/hello/model/customer/CustomerRepository.java" />
-        <option value="$PROJECT_DIR$/src/test/java/hello/WebLayerTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/hello/controller/CustomerController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/hello/model/customer/Customer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/hello/controller/CustomerDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/brunomb/com/brunomb/spo/model/customer/Customer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/brunomb/spo/controller/customer/CustomerDTO.java" />
         <option value="$PROJECT_DIR$/src/test/java/hello/CustomerControllerTest.java" />
@@ -161,18 +177,49 @@
         <option value="$PROJECT_DIR$/src/main/java/com/brunomb/spo/product/CustomerController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/brunomb/spo/product/ProductRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/brunomb/spo/customer/CustomerRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/brunomb/spo/customer/CustomerController.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/brunomb/spo/customer/CustomerControllerTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/brunomb/spo/product/ProductController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/data.sql" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/src/main/resources/db/migration/V2__seed.sql" />
-        <option value="$PROJECT_DIR$/src/main/resources/db/migration/V1__init.sql" />
         <option value="$PROJECT_DIR$/src/main/java/com/brunomb/spo/customer/Customer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/brunomb/spo/product/Product.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/lombok.config" />
+        <option value="$PROJECT_DIR$/src/main/java/com/brunomb/spo/user/customer/CustomerController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/brunomb/spo/user/CustomerController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/brunomb/spo/user/Customer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/brunomb/spo/user/User.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/brunomb/spo/customer/UserControllerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/brunomb/spo/user/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/brunomb/spo/user/UserDetailsServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/brunomb/spo/auth/AuthController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/db/migration/V2__seed.sql" />
+        <option value="$PROJECT_DIR$/src/main/resources/db/migration/V1__init.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/com/brunomb/spo/security/JWTTokenProvider.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/brunomb/spo/security/SecurityConstants.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/brunomb/spo/MySuperServiceConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/brunomb/spo/customer/CustomerController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/brunomb/spo/security/JWTConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/brunomb/spo/security/JWTAuthenticationFilter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/brunomb/spo/auth/LoginRequest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/brunomb/spo/Application.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/brunomb/spo/ContextLoadTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/brunomb/spo/YamlPropertyLoaderFactory.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/brunomb/spo/security/JWTAuthorizationFilter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/brunomb/spo/Application.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/application.yml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/brunomb/spo/ApplicationConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/brunomb/spo/security/WebSecurity.java" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/main/java/com/brunomb/spo/user/UserRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/brunomb/spo/security/UserDetailsServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/brunomb/spo/WebSecurityTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/brunomb/spo/UserDetailsMock.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/brunomb/spo/AbstractTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/brunomb/spo/customer/CustomerControllerTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/brunomb/spo/product/ProductControllerTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/brunomb/spo/user/UserControllerTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/brunomb/spo/ApplicationTest.java" />
       </list>
     </option>
   </component>
@@ -188,6 +235,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -198,27 +247,121 @@
             <path>
               <item name="spring-hello" type="b2602c69:ProjectViewProjectNode" />
               <item name="spring-hello" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="spring-hello" type="b2602c69:ProjectViewProjectNode" />
               <item name="spring-hello" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
-              <item name="reports" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
               <item name="spring-hello" type="b2602c69:ProjectViewProjectNode" />
               <item name="spring-hello" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
-              <item name="reports" type="462c0819:PsiDirectoryNode" />
-              <item name="coverage" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-hello" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-hello" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="spo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-hello" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-hello" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="spo" type="462c0819:PsiDirectoryNode" />
+              <item name="auth" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-hello" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-hello" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="spo" type="462c0819:PsiDirectoryNode" />
+              <item name="security" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-hello" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-hello" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-hello" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-hello" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="migration" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-hello" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-hello" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-hello" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-hello" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-hello" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-hello" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="spo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-hello" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-hello" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="spo" type="462c0819:PsiDirectoryNode" />
+              <item name="customer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-hello" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-hello" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="spo" type="462c0819:PsiDirectoryNode" />
+              <item name="product" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-hello" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-hello" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="spo" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-hello" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-hello" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -226,10 +369,17 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="restartRequiresConfirmation" value="false" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.brunomb.spo.product" />
+      <recent name="com.brunomb.spo.customer" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/resources" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/brunomb/spo/user" />
       <recent name="$PROJECT_DIR$/src/main/resources/db/migration" />
       <recent name="$PROJECT_DIR$/src/main/java/com/brunomb/spo/product" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
@@ -247,13 +397,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Application - Dev">
+  <component name="RunManager" selected="JUnit.CustomerControllerTest (1)">
     <configuration name="Application - Dev" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.brunomb.spo.Application" />
       <module name="spring-hello.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.brunomb.spo.customer.*" />
+          <option name="PATTERN" value="com.brunomb.spo.security.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -270,7 +420,7 @@
       <option name="PROGRAM_PARAMETERS" value="--spring.profiles.active=prod" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.brunomb.spo.customer.*" />
+          <option name="PATTERN" value="com.brunomb.spo.security.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -286,7 +436,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ApplicationTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ApplicationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-hello.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.brunomb.spo.security.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="hello" />
+      <option name="MAIN_CLASS_NAME" value="hello.ApplicationTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ContextLoadTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring-hello.test" />
       <extension name="coverage">
         <pattern>
@@ -295,22 +460,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.brunomb.spo" />
-      <option name="MAIN_CLASS_NAME" value="com.brunomb.spo.ApplicationTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ApplicationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring-hello.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.brunomb.spo.customer.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="hello" />
-      <option name="MAIN_CLASS_NAME" value="hello.ApplicationTest" />
+      <option name="MAIN_CLASS_NAME" value="com.brunomb.spo.ContextLoadTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -335,12 +485,27 @@
       <module name="spring-hello.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.brunomb.spo.customer.*" />
+          <option name="PATTERN" value="com.brunomb.spo.security.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="hello" />
       <option name="MAIN_CLASS_NAME" value="hello.CustomerControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomerControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-hello.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.brunomb.spo.security.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.brunomb.spo.customer" />
+      <option name="MAIN_CLASS_NAME" value="com.brunomb.spo.customer.CustomerControllerTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -352,14 +517,14 @@
       <item itemvalue="JUnit.All in spring-hello (1)" />
       <item itemvalue="JUnit.ApplicationTest" />
       <item itemvalue="JUnit.CustomerControllerTest" />
+      <item itemvalue="JUnit.ContextLoadTest" />
       <item itemvalue="JUnit.CustomerControllerTest (1)" />
-      <item itemvalue="JUnit.ApplicationTest (1)" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.CustomerControllerTest (1)" />
-        <item itemvalue="JUnit.ApplicationTest (1)" />
         <item itemvalue="JUnit.CustomerControllerTest" />
+        <item itemvalue="JUnit.ContextLoadTest" />
         <item itemvalue="JUnit.ApplicationTest" />
         <item itemvalue="JUnit.All in spring-hello (1)" />
       </list>
@@ -376,34 +541,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CustomerControllerTest_(1) - 2019.02.17 at 00h 58m 12s.xml">
+    <history-entry file="CustomerControllerTest_(1) - 2019.02.25 at 00h 31m 55s.xml">
       <configuration name="CustomerControllerTest (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CustomerControllerTest_(1) - 2019.02.17 at 00h 58m 28s.xml">
+    <history-entry file="CustomerControllerTest_(1) - 2019.02.25 at 00h 32m 42s.xml">
       <configuration name="CustomerControllerTest (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CustomerControllerTest_(1) - 2019.02.17 at 00h 59m 49s.xml">
+    <history-entry file="CustomerControllerTest_(1) - 2019.02.25 at 00h 34m 10s.xml">
       <configuration name="CustomerControllerTest (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CustomerControllerTest_(1) - 2019.02.17 at 01h 06m 41s.xml">
+    <history-entry file="CustomerControllerTest_(1) - 2019.02.25 at 00h 35m 46s.xml">
       <configuration name="CustomerControllerTest (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CustomerControllerTest_(1) - 2019.02.17 at 01h 12m 07s.xml">
+    <history-entry file="CustomerControllerTest_(1) - 2019.02.25 at 00h 36m 20s.xml">
       <configuration name="CustomerControllerTest (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CustomerControllerTest_(1) - 2019.02.17 at 01h 12m 30s.xml">
+    <history-entry file="CustomerControllerTest_(1) - 2019.02.25 at 00h 37m 21s.xml">
       <configuration name="CustomerControllerTest (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CustomerControllerTest_(1) - 2019.02.17 at 12h 15m 49s.xml">
+    <history-entry file="CustomerControllerTest_(1) - 2019.02.25 at 00h 39m 27s.xml">
       <configuration name="CustomerControllerTest (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CustomerControllerTest_(1) - 2019.02.17 at 12h 38m 59s.xml">
+    <history-entry file="CustomerControllerTest_(1) - 2019.02.25 at 00h 40m 43s.xml">
       <configuration name="CustomerControllerTest (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CustomerControllerTest_(1) - 2019.02.20 at 21h 54m 32s.xml">
+    <history-entry file="CustomerControllerTest_(1) - 2019.02.25 at 00h 41m 10s.xml">
       <configuration name="CustomerControllerTest (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CustomerControllerTest_(1) - 2019.02.20 at 21h 58m 05s.xml">
+    <history-entry file="CustomerControllerTest_(1) - 2019.02.25 at 00h 42m 07s.xml">
       <configuration name="CustomerControllerTest (1)" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -420,11 +585,12 @@
     <frame x="20" y="69" width="1400" height="753" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2790869" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28645065" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Learn" order="3" weight="0.3298969" />
       <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info id="DB Browser" order="5" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32980332" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.44780636" />
@@ -432,12 +598,13 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32829046" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.4387292" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.4387292" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Build" order="10" weight="0.3267776" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32829046" />
       <window_info anchor="bottom" id="Problems" order="12" />
+      <window_info anchor="bottom" id="DB Execution Console" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -445,343 +612,451 @@
       <window_info anchor="right" id="Palette&#9;" order="4" />
     </layout>
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/brunomb/spo/security/JWTAuthenticationFilter.java</url>
+          <line>56</line>
+          <properties />
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/brunomb/spo/security/JWTAuthorizationFilter.java</url>
+          <line>29</line>
+          <properties />
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/brunomb/spo/security/WebSecurity.java</url>
+          <line>26</line>
+          <properties />
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-core/5.0.8.RELEASE/eacb961f1d4b542fb4b4bcd1321d0ae9e4b93843/spring-security-core-5.0.8.RELEASE-sources.jar!/org/springframework/security/authentication/dao/DaoAuthenticationProvider.java</url>
+          <line>85</line>
+          <properties />
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>passwordEncoder.encode(&quot;password&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/hello/RestConfig.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/hello/Greeting.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application-prod.properties" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application-dev.properties" />
-    <entry file="file://$PROJECT_DIR$/build/reports/tests/test/index.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-test/5.0.9.RELEASE/e1e6cff03e69e4db489d723c9a1c91afe8e0c637/spring-test-5.0.9.RELEASE-sources.jar!/org/springframework/test/web/servlet/result/JsonPathResultMatchers.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/5.0.9.RELEASE/bf1c19aadae4724bfe7e9196652e649bb08a99c4/spring-context-5.0.9.RELEASE-sources.jar!/org/springframework/context/annotation/ComponentScan.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1729">
-          <caret line="61" column="14" selection-start-line="61" selection-start-column="14" selection-end-line="61" selection-end-column="14" />
+        <state relative-caret-position="113">
+          <caret line="58" column="18" selection-start-line="58" selection-start-column="18" selection-end-line="58" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.mockito/mockito-core/2.15.0/46e8ee5e6fdfaee85be74093e324d53c881e0567/mockito-core-2.15.0-sources.jar!/org/mockito/internal/MockitoCore.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-test/2.0.5.RELEASE/c859a6b33a5a1dc9b3d2c4b07fd797405a1c1a2d/spring-boot-test-2.0.5.RELEASE-sources.jar!/org/springframework/boot/test/context/SpringBootTestContextBootstrapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="69" column="43" selection-start-line="69" selection-start-column="43" selection-end-line="69" selection-end-column="43" />
+        <state relative-caret-position="84">
+          <caret line="77" column="13" selection-start-line="77" selection-start-column="13" selection-end-line="77" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.mockito/mockito-core/2.15.0/46e8ee5e6fdfaee85be74093e324d53c881e0567/mockito-core-2.15.0-sources.jar!/org/mockito/Mockito.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-test/2.0.5.RELEASE/c859a6b33a5a1dc9b3d2c4b07fd797405a1c1a2d/spring-boot-test-2.0.5.RELEASE-sources.jar!/org/springframework/boot/test/context/SpringBootTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="2039" column="30" selection-start-line="2039" selection-start-column="30" selection-end-line="2039" selection-end-column="30" />
-          <folding>
-            <element signature="e#95700#95701#0" expanded="true" />
-            <element signature="e#95752#95753#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="98">
+          <caret line="73" column="27" lean-forward="true" selection-start-line="73" selection-start-column="27" selection-end-line="73" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-test/5.0.9.RELEASE/e1e6cff03e69e4db489d723c9a1c91afe8e0c637/spring-test-5.0.9.RELEASE-sources.jar!/org/springframework/test/web/servlet/ResultHandler.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/5.0.9.RELEASE/bf1c19aadae4724bfe7e9196652e649bb08a99c4/spring-context-5.0.9.RELEASE-sources.jar!/org/springframework/context/annotation/ConfigurationClassParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="55" column="9" selection-start-line="55" selection-start-column="9" selection-end-line="55" selection-end-column="9" />
+        <state relative-caret-position="-9">
+          <caret line="452" column="64" selection-start-line="452" selection-start-column="64" selection-end-line="452" selection-end-column="64" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-test/5.0.9.RELEASE/e1e6cff03e69e4db489d723c9a1c91afe8e0c637/spring-test-5.0.9.RELEASE-sources.jar!/org/springframework/test/web/servlet/ResultActions.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot/2.0.5.RELEASE/1d01cb7845c049c204191b8a553a322bb97208d9/spring-boot-2.0.5.RELEASE-sources.jar!/org/springframework/boot/env/PropertySourceLoader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="64" column="29" lean-forward="true" selection-start-line="64" selection-start-column="29" selection-end-line="64" selection-end-column="29" />
+        <state relative-caret-position="133">
+          <caret line="32" column="17" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-mongodb/2.0.10.RELEASE/442e8d13605ad3b52dbcfca2af6a2511b7417e79/spring-data-mongodb-2.0.10.RELEASE-sources.jar!/org/springframework/data/mongodb/repository/MongoRepository.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/5.0.9.RELEASE/bf1c19aadae4724bfe7e9196652e649bb08a99c4/spring-context-5.0.9.RELEASE-sources.jar!/org/springframework/context/annotation/PropertySource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="48" column="12" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
+        <state relative-caret-position="-87">
+          <caret line="163" column="18" selection-start-line="163" selection-start-column="18" selection-end-line="163" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-commons/2.0.10.RELEASE/b7c6de4b7a506d67f608113b6ecf21091b927002/spring-data-commons-2.0.10.RELEASE-sources.jar!/org/springframework/data/repository/query/QueryByExampleExecutor.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot/2.0.5.RELEASE/1d01cb7845c049c204191b8a553a322bb97208d9/spring-boot-2.0.5.RELEASE-sources.jar!/org/springframework/boot/env/YamlPropertySourceLoader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="71" column="26" selection-start-line="71" selection-start-column="26" selection-end-line="71" selection-end-column="26" />
+        <state relative-caret-position="224">
+          <caret line="43" column="35" selection-start-line="43" selection-start-column="35" selection-end-line="43" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-test/5.0.9.RELEASE/e1e6cff03e69e4db489d723c9a1c91afe8e0c637/spring-test-5.0.9.RELEASE-sources.jar!/org/springframework/test/web/servlet/request/MockMvcRequestBuilders.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="72" column="46" lean-forward="true" selection-start-line="72" selection-start-column="46" selection-end-line="72" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-test/5.0.9.RELEASE/e1e6cff03e69e4db489d723c9a1c91afe8e0c637/spring-test-5.0.9.RELEASE-sources.jar!/org/springframework/test/web/servlet/request/MockHttpServletRequestBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1022">
-          <caret line="143" column="4" selection-start-line="143" selection-start-column="4" selection-end-line="143" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/seed/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="41" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/brunomb/spo/controller/customer/CustomerDTO.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/brunomb/spo/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.16.22/38bc39b0677b208aeacbdc2d30e8499663687373/lombok-1.16.22-sources.jar!/lombok/Data.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="45" column="18" selection-start-line="45" selection-start-column="18" selection-end-line="45" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.16.22/38bc39b0677b208aeacbdc2d30e8499663687373/lombok-1.16.22-sources.jar!/lombok/NoArgsConstructor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-397">
-          <caret line="43" column="18" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/brunomb/spo/customer/CustomerCriteria.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/brunomb/spo/product/CustomerCriteria.java" />
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/5.0.9.RELEASE/c19005e8a2a2216b0e9da304f1dce8ba0d72e110/spring-web-5.0.9.RELEASE-sources.jar!/org/springframework/web/bind/annotation/RestController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="49" column="18" selection-start-line="49" selection-start-column="18" selection-end-line="49" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/brunomb/spo/ApplicationTest.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/5.0.9.RELEASE/ab4feec73b188109eb1a3aa8aed83c1f97ed1168/spring-core-5.0.9.RELEASE-sources.jar!/org/springframework/core/io/support/DefaultPropertySourceFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
-          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.validation/validation-api/2.0.1.Final/4b714a5167580122e46ead3317ffcdcdbd67c5f0/validation-api-2.0.1.Final-sources.jar!/javax/validation/constraints/DecimalMin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-52">
-          <caret line="49" column="18" selection-start-line="49" selection-start-column="18" selection-end-line="49" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.mockito/mockito-core/2.15.0/46e8ee5e6fdfaee85be74093e324d53c881e0567/mockito-core-2.15.0-sources.jar!/org/mockito/ArgumentMatchers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15855">
-          <caret line="1102" column="25" selection-start-line="1102" selection-start-column="25" selection-end-line="1102" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/1dc37250fbc78e23a65a67fbbaf71d2e9cbc3c0b/hamcrest-core-1.3-sources.jar!/org/hamcrest/Matcher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-test/5.0.9.RELEASE/e1e6cff03e69e4db489d723c9a1c91afe8e0c637/spring-test-5.0.9.RELEASE-sources.jar!/org/springframework/test/web/servlet/result/MockMvcResultMatchers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2055">
-          <caret line="175" column="26" selection-start-line="175" selection-start-column="26" selection-end-line="175" selection-end-column="26" />
-          <folding>
-            <element signature="e#5715#5716#0" expanded="true" />
-            <element signature="e#5756#5757#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-test/5.0.9.RELEASE/e1e6cff03e69e4db489d723c9a1c91afe8e0c637/spring-test-5.0.9.RELEASE-sources.jar!/org/springframework/test/web/servlet/result/ContentResultMatchers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="54" column="14" selection-start-line="54" selection-start-column="14" selection-end-line="54" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/Assert.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="13275">
-          <caret line="921" column="51" selection-start-line="921" selection-start-column="51" selection-end-line="921" selection-end-column="51" />
-          <folding>
-            <element signature="e#35031#35032#0" expanded="true" />
-            <element signature="e#35078#35079#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.validation/validation-api/2.0.1.Final/4b714a5167580122e46ead3317ffcdcdbd67c5f0/validation-api-2.0.1.Final-sources.jar!/javax/validation/constraints/Min.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="48" column="18" selection-start-line="48" selection-start-column="18" selection-end-line="48" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gradlew">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-commons/2.0.10.RELEASE/b7c6de4b7a506d67f608113b6ecf21091b927002/spring-data-commons-2.0.10.RELEASE-sources.jar!/org/springframework/data/domain/Pageable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-462">
-          <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-commons/2.0.10.RELEASE/b7c6de4b7a506d67f608113b6ecf21091b927002/spring-data-commons-2.0.10.RELEASE-sources.jar!/org/springframework/data/repository/CrudRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="53" column="16" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="16" />
+          <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/brunomb/spo/customer/CustomerController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="26" column="57" selection-start-line="26" selection-start-column="57" selection-end-line="26" selection-end-column="57" />
+        <state relative-caret-position="300">
+          <caret line="20" column="7" lean-forward="true" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#832#833#0" expanded="true" />
-            <element signature="e#884#885#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/brunomb/spo/security/JWTAuthorizationFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="4" selection-start-column="4" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/brunomb/spo/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#547#548#0" expanded="true" />
+            <element signature="e#597#598#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="53" column="66" selection-start-line="53" selection-start-column="66" selection-end-line="53" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-test/5.0.8.RELEASE/ac095d2e221ea7467087a8e36bcfec4d5100ee5f/spring-security-test-5.0.8.RELEASE-sources.jar!/org/springframework/security/test/web/servlet/setup/SecurityMockMvcConfigurer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="46" column="28" lean-forward="true" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/brunomb/spo/ApplicationConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.0.8.RELEASE/c76a7da65713aad07fceb31b63060debe1f70e2b/spring-security-web-5.0.8.RELEASE-sources.jar!/org/springframework/security/web/csrf/HttpSessionCsrfTokenRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="88" column="21" selection-start-line="88" selection-start-column="21" selection-end-line="88" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-test/5.0.8.RELEASE/ac095d2e221ea7467087a8e36bcfec4d5100ee5f/spring-security-test-5.0.8.RELEASE-sources.jar!/org/springframework/security/test/web/servlet/request/SecurityMockMvcRequestPostProcessors.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-28">
+          <caret line="361" column="16" selection-start-line="361" selection-start-column="16" selection-end-line="361" selection-end-column="16" />
+          <folding>
+            <element signature="e#5237#5238#0" expanded="true" />
+            <element signature="e#5281#5282#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-test/5.0.8.RELEASE/ac095d2e221ea7467087a8e36bcfec4d5100ee5f/spring-security-test-5.0.8.RELEASE-sources.jar!/org/springframework/security/test/web/servlet/setup/SecurityMockMvcConfigurers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="42" column="35" selection-start-line="42" selection-start-column="35" selection-end-line="42" selection-end-column="35" />
+          <folding>
+            <element signature="e#1595#1596#0" expanded="true" />
+            <element signature="e#1640#1641#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-core/5.0.8.RELEASE/eacb961f1d4b542fb4b4bcd1321d0ae9e4b93843/spring-security-core-5.0.8.RELEASE-sources.jar!/org/springframework/security/authentication/UsernamePasswordAuthenticationToken.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="65">
+          <caret line="70" column="11" selection-start-line="70" selection-start-column="11" selection-end-line="70" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-test/5.0.8.RELEASE/ac095d2e221ea7467087a8e36bcfec4d5100ee5f/spring-security-test-5.0.8.RELEASE-sources.jar!/org/springframework/security/test/context/support/WithMockUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-507">
+          <caret line="55" column="18" selection-start-line="55" selection-start-column="18" selection-end-line="55" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-test/5.0.9.RELEASE/e1e6cff03e69e4db489d723c9a1c91afe8e0c637/spring-test-5.0.9.RELEASE-sources.jar!/org/springframework/test/web/servlet/request/MockHttpServletRequestBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="346" column="41" selection-start-line="346" selection-start-column="41" selection-end-line="346" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/brunomb/spo/user/UserRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-core/5.0.8.RELEASE/eacb961f1d4b542fb4b4bcd1321d0ae9e4b93843/spring-security-core-5.0.8.RELEASE-sources.jar!/org/springframework/security/authentication/AuthenticationManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="57" column="19" selection-start-line="57" selection-start-column="19" selection-end-line="57" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/5.0.9.RELEASE/9f9a828936d81afd49a603bda9cc1aed863a0d85/spring-core-5.0.9.RELEASE.jar!/org/springframework/cglib/proxy/MethodProxy.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="119" selection-start-line="119" selection-end-line="119" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/5.0.9.RELEASE/bf1c19aadae4724bfe7e9196652e649bb08a99c4/spring-context-5.0.9.RELEASE-sources.jar!/org/springframework/context/annotation/ConfigurationClassEnhancer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="364" selection-start-line="364" selection-end-line="364" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/jre/lib/rt.jar!/sun/reflect/NativeMethodAccessorImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="33" column="33" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/5.0.9.RELEASE/1cfee1c1857cda6542f478ef8fe7d2fdb6c3b20/spring-beans-5.0.9.RELEASE-sources.jar!/org/springframework/beans/factory/support/SimpleInstantiationStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="153" selection-start-line="153" selection-end-line="153" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/5.0.9.RELEASE/1cfee1c1857cda6542f478ef8fe7d2fdb6c3b20/spring-beans-5.0.9.RELEASE-sources.jar!/org/springframework/beans/factory/support/ConstructorResolver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="402" column="48" selection-start-line="402" selection-start-column="48" selection-end-line="402" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/brunomb/spo/security/UserDetailsServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="54" lean-forward="true" selection-start-line="20" selection-start-column="54" selection-end-line="20" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-autoconfigure/2.0.5.RELEASE/345d299a67dc64b34b4a8b7f13a99f09d271384b/spring-boot-autoconfigure-2.0.5.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/security/servlet/UserDetailsServiceAutoConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="69" column="21" lean-forward="true" selection-start-line="69" selection-start-column="21" selection-end-line="69" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/5.0.9.RELEASE/1cfee1c1857cda6542f478ef8fe7d2fdb6c3b20/spring-beans-5.0.9.RELEASE-sources.jar!/org/springframework/beans/factory/support/AbstractAutowireCapableBeanFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="1246" selection-start-line="1246" selection-end-line="1246" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/brunomb/spo/security/WebSecurity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="35" column="43" lean-forward="true" selection-start-line="35" selection-start-column="43" selection-end-line="35" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-core/5.0.8.RELEASE/eacb961f1d4b542fb4b4bcd1321d0ae9e4b93843/spring-security-core-5.0.8.RELEASE-sources.jar!/org/springframework/security/provisioning/InMemoryUserDetailsManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="150" selection-start-line="150" selection-end-line="150" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-core/5.0.8.RELEASE/eacb961f1d4b542fb4b4bcd1321d0ae9e4b93843/spring-security-core-5.0.8.RELEASE-sources.jar!/org/springframework/security/crypto/password/PasswordEncoder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="42" column="12" selection-start-line="42" selection-start-column="12" selection-end-line="42" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-core/5.0.8.RELEASE/eacb961f1d4b542fb4b4bcd1321d0ae9e4b93843/spring-security-core-5.0.8.RELEASE-sources.jar!/org/springframework/security/crypto/bcrypt/BCryptPasswordEncoder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="93" selection-start-line="93" selection-end-line="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-core/5.0.8.RELEASE/eacb961f1d4b542fb4b4bcd1321d0ae9e4b93843/spring-security-core-5.0.8.RELEASE-sources.jar!/org/springframework/security/authentication/dao/AbstractUserDetailsAuthenticationProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="196" selection-start-line="196" selection-end-line="196" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-core/5.0.8.RELEASE/eacb961f1d4b542fb4b4bcd1321d0ae9e4b93843/spring-security-core-5.0.8.RELEASE-sources.jar!/org/springframework/security/authentication/ProviderManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="220" selection-start-line="220" selection-end-line="220" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.0.8.RELEASE/c76a7da65713aad07fceb31b63060debe1f70e2b/spring-security-web-5.0.8.RELEASE-sources.jar!/org/springframework/security/web/authentication/AbstractAuthenticationProcessingFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="239" selection-start-line="239" selection-end-line="239" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-core/5.0.8.RELEASE/eacb961f1d4b542fb4b4bcd1321d0ae9e4b93843/spring-security-core-5.0.8.RELEASE-sources.jar!/org/springframework/security/authentication/dao/DaoAuthenticationProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="92" selection-start-line="92" selection-end-line="92" />
+          <folding>
+            <element signature="e#5997#5998#0" expanded="true" />
+            <element signature="e#6029#6030#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/brunomb/spo/security/JWTAuthenticationFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="56" selection-start-line="56" selection-end-line="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/brunomb/spo/YamlPropertyLoaderFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="17" column="89" selection-start-line="17" selection-start-column="89" selection-end-line="17" selection-end-column="89" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/brunomb/spo/ContextLoadTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/brunomb/spo/UserDetailsMock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-core/5.0.8.RELEASE/eacb961f1d4b542fb4b4bcd1321d0ae9e4b93843/spring-security-core-5.0.8.RELEASE-sources.jar!/org/springframework/security/core/userdetails/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="452">
+          <caret line="83" column="11" selection-start-line="83" selection-start-column="11" selection-end-line="83" selection-end-column="11" />
+          <folding>
+            <element signature="e#5570#5571#0" expanded="true" />
+            <element signature="e#5592#5593#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/brunomb/spo/AbstractTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="49">
+          <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/brunomb/spo/customer/CustomerControllerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="79" column="50" selection-start-line="79" selection-start-column="50" selection-end-line="79" selection-end-column="50" />
+        <state relative-caret-position="108">
+          <caret line="107" column="19" selection-start-line="107" selection-start-column="19" selection-end-line="107" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hibernate.javax.persistence/hibernate-jpa-2.1-api/1.0.2.Final/604e1101cb261c61200bfd655dfc1aa5aeca36d6/hibernate-jpa-2.1-api-1.0.2.Final-sources.jar!/javax/persistence/Id.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/brunomb/spo/product/ProductControllerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="49" column="18" selection-start-line="49" selection-start-column="18" selection-end-line="49" selection-end-column="18" />
+        <state relative-caret-position="108">
+          <caret line="104" column="17" selection-start-line="104" selection-start-column="17" selection-end-line="104" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hibernate.javax.persistence/hibernate-jpa-2.1-api/1.0.2.Final/604e1101cb261c61200bfd655dfc1aa5aeca36d6/hibernate-jpa-2.1-api-1.0.2.Final-sources.jar!/javax/persistence/Column.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/brunomb/spo/user/UserControllerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="48" column="18" selection-start-line="48" selection-start-column="18" selection-end-line="48" selection-end-column="18" />
+        <state relative-caret-position="114">
+          <caret line="102" column="17" selection-start-line="102" selection-start-column="17" selection-end-line="102" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/brunomb/spo/customer/CustomerRepository.java">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="31" lean-forward="true" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/brunomb/spo/ApplicationTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="4" column="85" selection-start-line="4" selection-start-column="85" selection-end-line="4" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/brunomb/spo/product/ProductController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="29">
-          <caret line="2" column="62" selection-start-line="2" selection-start-column="62" selection-end-line="2" selection-end-column="62" />
-          <folding>
-            <element signature="e#984#985#0" expanded="true" />
-            <element signature="e#1030#1031#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/data.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/brunomb/spo/product/ProductRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/db/migration/V2__seed.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/db/migration/V1__init.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="55" selection-start-line="9" selection-start-column="55" selection-end-line="9" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/brunomb/spo/customer/Customer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="18" column="83" selection-start-line="18" selection-start-column="83" selection-end-line="18" selection-end-column="83" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/brunomb/spo/product/Product.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="3" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-bin/divx0s2uj4thofgytb7gf9fsi/gradle-4.8/lib/plugins/gradle-reporting-4.8.jar!/org/gradle/api/reporting/ConfigurableReport.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/reports/coverage/index.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="34" column="61" selection-start-line="34" selection-start-column="61" selection-end-line="34" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lombok.config">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="26" selection-start-column="26" selection-end-column="26" />
+          <caret line="4" column="46" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="46" />
         </state>
       </provider>
     </entry>

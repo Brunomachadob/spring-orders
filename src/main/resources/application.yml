@@ -1,3 +1,14 @@
+app:
+  auth:
+    sign-up-url: /auth/sign-up
+    login-url: /auth/login
+  jwt:
+    key: 'ThisIsMyKey'
+    expiration: 864_000_000 # 10 days
+    token-prefix: 'Bearer '
+    header: 'Authorization'
+
+
 spring:
   application:
     name: spring-hello
